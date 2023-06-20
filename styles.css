@@ -185,7 +185,7 @@ footer {
 .hero-container {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 7%;
 }
 
 .hero-text {
@@ -221,6 +221,7 @@ footer {
     background-color: var(--main-color);
     padding: 2rem 5rem;
     display: flex;
+    flex-wrap: wrap ;
     justify-content: space-between;
     align-items: center;
 }
@@ -259,4 +260,15 @@ footer {
 .resume-section audio {
     position: relative;
     left: 35vw;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 768px) {
+
+    .hero-container {
+        top: 65%;
+        right: 17%;
+    }
+
 }
