@@ -185,7 +185,7 @@ footer {
 .hero-container {
     position: absolute;
     top: 50%;
-    right: 7%;
+    right: 5%;
 }
 
 .hero-text {
@@ -221,7 +221,6 @@ footer {
     background-color: var(--main-color);
     padding: 2rem 5rem;
     display: flex;
-    flex-wrap: wrap ;
     justify-content: space-between;
     align-items: center;
 }
@@ -262,13 +261,40 @@ footer {
     left: 35vw;
 }
 
+/* Small Laptop */
+
+@media screen and (max-width: 1024px) {
+
+    .hero-image h1 {
+        font-size: 3rem;
+    }
+
+    .projects-article {
+        flex-wrap: wrap;
+    }
+
+    .info-section {
+        padding: 0 4rem;
+    }
+
+}
+
 /* TABLET */
 
 @media screen and (max-width: 768px) {
 
+    .hero-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
     .hero-container {
-        top: 65%;
-        right: 17%;
+        position: relative;
+        top: auto;
+        right: auto;
+        padding: 1rem;
     }
 
 }
