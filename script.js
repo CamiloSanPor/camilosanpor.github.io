@@ -53,6 +53,10 @@ function showSlides(n) {
 
 let counter = JSON.parse(localStorage.getItem("counter"));
 
+if (counter === null) {
+    counter = 0;
+}
+
 let main = ["#e60041", "#0CC0DF", "#F2E0C9"];
 let background = ["black", "black", "#26150F"];
 let nav = ["black", "black", "#26150F"];
