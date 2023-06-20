@@ -53,8 +53,6 @@ function showSlides(n) {
 
 let counter = JSON.parse(localStorage.getItem("counter"));
 
-console.log(counter)
-
 if (counter === null) {
     counter = 0;
 }
