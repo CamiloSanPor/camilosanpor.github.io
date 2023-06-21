@@ -110,7 +110,7 @@ nav {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: var(--text-color);
+    background-color: white;
 }
 
 /* FOOTER */
@@ -357,11 +357,11 @@ footer {
         text-align: center;
         background-color: var(--background-color);
         border: 2px solid rgba(200, 200, 200, .2);
-        padding-bottom: 1%;
+        padding-bottom: 5%;
     }
 
     .nav-menu a {
-        margin: 1% 0%;
+        margin: 5% 0%;
         width: 50%;
         align-self: center;
     }
