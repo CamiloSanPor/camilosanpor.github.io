@@ -312,8 +312,6 @@ footer {
 
 @media screen and (max-width: 426px) {
     
-    * {background-color: aqua;}
-
     .index-main {
         padding: 1rem 2rem 2rem;
     }
