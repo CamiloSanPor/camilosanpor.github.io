@@ -58,7 +58,7 @@ setColors()
 
 function changeColors() {
 
-    if (counter >= 4){
+    if (counter >= 2){
         counter = 0;
     }
     else {
