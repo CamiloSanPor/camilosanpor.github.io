@@ -9,7 +9,7 @@ function burger(){
 
 // code taken from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_dots2S
 
-let slideIndex = 1;
+let slideIndex = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
     showSlides(slideIndex);
@@ -19,34 +19,23 @@ function nextSlide(n) {
     showSlides(slideIndex += n);
 }
 
-function pickSlide(n) {
-    showSlides(slideIndex = n);
-}
-
 function showSlides(n) {
 
-    let i;
     let slides = document.getElementsByClassName("slides");
-    let dots = document.getElementsByClassName("dot");
 
-    if (n > slides.length) {
-        slideIndex = 1
+    if (n >= slides.length) {
+        slideIndex = 0
     }
 
-    if (n < 1) {
+    if (n < 0) {
         slideIndex = slides.length
     }
 
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex-1].style.display = "flex";
-    dots[slideIndex-1].className += " active";
+    slides[slideIndex].style.display = "flex";
 }
 
 // color toggle

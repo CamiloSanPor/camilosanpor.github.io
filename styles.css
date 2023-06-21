@@ -297,4 +297,8 @@ footer {
         padding: 1rem;
     }
 
+    .slides img {
+        height: 1rem;
+    }
+
 }
