@@ -309,3 +309,43 @@ footer {
     }
 
 }
+
+@media screen and (max-width: 426px) {
+    
+    .index-main {
+        padding: 1rem 2rem 2rem;
+    }
+
+    footer {
+        margin: 2rem 2rem 4rem;
+    }
+
+    .footer-item {
+        margin: 0;
+    }
+
+    .projects-header {
+        margin: 12vh 2rem 5vh;
+    }
+
+    .slideshow-container {
+        margin: 2rem 1rem;
+    }
+
+    .slides img {
+        height: 8rem;
+    }
+
+    .info-section {
+        padding: 0 1rem;
+    }
+
+    .info-section p {
+        max-width: 16rem;
+    }
+
+    .info-section a {
+        word-wrap: break-word;
+    }
+
+}
