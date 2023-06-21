@@ -310,6 +310,8 @@ footer {
 
 }
 
+/* MOBILE */
+
 @media screen and (max-width: 426px) {
     
     .index-main {
@@ -337,7 +339,7 @@ footer {
     }
 
     .slides img {
-        height: 8rem;
+        height: 12.7rem;
     }
 
     .info-section {
@@ -352,4 +354,21 @@ footer {
         word-wrap: break-word;
     }
 
+    .resume-header {
+        margin: 12vh 2rem 3rem;
+    }
+
+    .resume-section, .resume-alt-section {
+        padding: 2rem;
+    }
+
+}
+
+/* TINY MOBILE */
+
+@media screen and (max-width: 320px) {
+    
+    .slides img {
+        height: 9rem;
+    }
 }
