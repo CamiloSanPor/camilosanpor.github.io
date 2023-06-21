@@ -111,6 +111,7 @@ footer {
 
 .footer-section {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-item {
@@ -118,6 +119,7 @@ footer {
     justify-content: start;
     align-items: center;
     margin-right: 4rem;
+    padding: 1rem 0;
 }
 
 .footer-item img {
