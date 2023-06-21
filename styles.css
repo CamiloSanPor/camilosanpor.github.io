@@ -310,14 +310,20 @@ footer {
 
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 425px) {
     
+    * {background-color: aqua;}
+
     .index-main {
         padding: 1rem 2rem 2rem;
     }
 
     footer {
         margin: 2rem 2rem 4rem;
+    }
+
+    .footer-section {
+        flex-direction: column;
     }
 
     .footer-item {
