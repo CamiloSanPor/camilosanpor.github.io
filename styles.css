@@ -43,6 +43,12 @@ h3 {
     margin: 1rem 0;
 }
 
+h4 {
+    color: var(--main-color);
+    font-size: 1.4em;
+    margin: 1rem 0;
+}
+
 .alt-header {
     color: var(--alt-header);
     align-self: flex-start;
@@ -62,6 +68,18 @@ body {
     margin: 0;
 }
 
+.two-columns {
+    display: flex;
+}
+
+.two-columns > div {
+    padding-right: 10rem;
+}
+
+.two-columns > ul {
+    padding-right: 10rem;
+}
+
 /* NAV */
 
 nav {
@@ -79,7 +97,7 @@ nav {
 
 .nav-menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 75vw;
 }
 
@@ -116,7 +134,7 @@ nav {
 /* FOOTER */
 
 footer {
-    margin: 2rem 5rem 4rem;
+    margin: 2rem 12rem 4rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -250,20 +268,20 @@ footer {
 /* RESUME */
 
 .resume-header {
-    margin: 12vh 5rem 3rem;
-}
-
-.resume-section {
-    background-color: var(--main-color);
-    padding: 2rem 5rem;
+    margin: 12vh 12rem 3rem;
 }
 
 .resume-alt-section {
-    background-color: var(--background-color);
-    padding: 2rem 5rem;
+    background-color: var(--main-color);
+    padding: 2rem 12rem;
 }
 
-.resume-alt-section li {
+.resume-section {
+    background-color: var(--background-color);
+    padding: 2rem 12rem;
+}
+
+.resume-section li {
     color: white;
 }
 
@@ -275,6 +293,10 @@ footer {
 .resume-section audio {
     position: relative;
     left: 35vw;
+}
+
+.experience-section {
+    padding: 1rem 0rem;
 }
 
 /* Small Laptop */
@@ -291,6 +313,18 @@ footer {
 
     .info-section {
         padding: 0 4rem;
+    }
+
+    .resume-header {
+        margin: 12vh 5rem 3rem;
+    }
+    
+    .resume-alt-section {
+        padding: 2rem 5rem;
+    }
+    
+    .resume-section {
+        padding: 2rem 5rem;
     }
 
 }
