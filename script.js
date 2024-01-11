@@ -12,16 +12,47 @@ function burger(){
 let slideIndex = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
-    showSlides(slideIndex);
+    showSlides(slideIndex, 0);
 }, false);
 
-function nextSlide(n) {
-    showSlides(slideIndex += n);
+function nextSlide(n, slideID) {
+    showSlides(slideIndex += n, slideID);
 }
 
-function showSlides(n) {
+function showSlides(n, slideID) {
 
-    let slides = document.getElementsByClassName("slides");
+    let slides;
+
+    switch(slideID){
+
+        case 0:
+            slides = document.getElementsByClassName("slides");
+
+            let firstSlides = [];
+
+            let carrutoSlides = document.getElementsByClassName("slideC");
+            let weometrySlides = document.getElementsByClassName("slideWG");
+
+            firstSlides.push(carrutoSlides[0]);
+            firstSlides.push(weometrySlides[0]);
+
+            console.log(firstSlides);
+
+            for (let i = 0; i < firstSlides.length; i++){
+                firstSlides[i].style.display = "flex";
+            }
+
+            return;
+
+        case 1:
+            slides = document.getElementsByClassName("slideWG");
+            break;
+
+        case 2:
+            slides = document.getElementsByClassName("slideC");
+            break;
+
+    }
 
     if (n >= slides.length) {
         slideIndex = 0
