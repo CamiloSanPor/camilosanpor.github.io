@@ -354,6 +354,7 @@ footer {
 
     .projects-article {
         padding: 2rem 1rem;
+        margin: 4rem 2rem;
     }
 
     .slides img {
@@ -365,6 +366,10 @@ footer {
 /* MOBILE */
 
 @media screen and (max-width: 426px) {
+
+    h2 {
+        font-size: 2em;
+    }
 
     .navbar {
         width: 10vw;
@@ -432,6 +437,15 @@ footer {
         margin: 12vh 2rem 5vh;
     }
 
+    .projects-article {
+        padding: 2rem 1rem;
+        margin: 4rem 1rem;
+    }
+
+    .controls-credits {
+        flex-direction: column;
+    }
+
     .slideshow-container {
         margin: 2rem 1rem;
     }
@@ -458,6 +472,18 @@ footer {
 
     .resume-section, .resume-alt-section {
         padding: 2rem;
+    }
+
+    .two-columns {
+        flex-direction: column;
+    }
+
+    .two-columns > div {
+        padding-right: 0;
+    }
+
+    .two-columns > ul {
+        padding-right: 0;
     }
 
 }

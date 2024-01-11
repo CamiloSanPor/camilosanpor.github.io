@@ -36,8 +36,6 @@ function showSlides(n, slideID) {
             firstSlides.push(carrutoSlides[0]);
             firstSlides.push(weometrySlides[0]);
 
-            console.log(firstSlides);
-
             for (let i = 0; i < firstSlides.length; i++){
                 firstSlides[i].style.display = "flex";
             }
