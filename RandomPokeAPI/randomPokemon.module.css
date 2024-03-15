@@ -13,3 +13,18 @@ p {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.pokemon {
+    text-align: center;
+}
+
+.sprite {
+    height: 200px;
+}
+
+.refresh {
+    height: 75px;
+    width: 75px;
+    font-size: 30pt;
+    text-align: center;
+}

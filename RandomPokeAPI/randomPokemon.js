@@ -19,15 +19,17 @@ function displayPokemon(data){
     refresh.innerHTML = '🔄';
 
     sprite.setAttribute('src', data.sprites.front_default);
-    sprite.setAttribute('height', '200px');
+    sprite.classList.add('sprite');
 
-    body.appendChild(refresh);
     body.appendChild(pokemon);
+    body.appendChild(refresh);
+
     
-    pokemon.style.textAlign = 'center';
+    pokemon.classList.add('pokemon');
     pokemon.appendChild(name);
     pokemon.appendChild(sprite);
     
+    refresh.classList.add('refresh');
     refresh.addEventListener('click', (event) => {
         location.reload();
     });
