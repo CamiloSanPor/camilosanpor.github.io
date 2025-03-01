@@ -1,268 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js"></script>
+		<link rel="icon" href="FavIcon/VeryBeautifulKitty.png" />
+		<title>Camilo Sanchez</title>
+	</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-        <link rel="icon" href="FavIcon/VeryBeautifulKitty.png">
-        <title>Camilo Sanchez</title>
-    </head>
+	<body>
+		<nav>
+			<div class="nav-menu">
+				<a href="index.html" class="nav-item">Home</a>
+				<a href="projects.html" class="nav-item">Game Jams</a>
+				<a href="resume.html" class="nav-item">Resume</a>
+			</div>
 
-    <body>
+			<div class="hamburger" onclick="burger()">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
 
-        <nav>
+			<img
+				src="NavImages/ColorToggle.png"
+				alt="color toggle"
+				class="color-toggle"
+				onclick="changeColors()"
+			/>
+		</nav>
 
-            <div class="nav-menu">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="projects.html" class="nav-item">Game Jams</a>
-                <a href="resume.html" class="nav-item">Resume</a>
-            </div>
-    
-            <div class="hamburger" onclick="burger()">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-    
-            <img src="NavImages/ColorToggle.png" alt="color toggle" class="color-toggle" onclick="changeColors()">
-    
-        </nav>
+		<header class="projects-header">
+			<h1>Game Jam Projects</h1>
+		</header>
 
-        <header class="projects-header">
+		<main>
+			<article class="projects-article">
+				<section class="info-section">
+					<div class="game-info">
+						<h2 class="alt-header">Weometry Gars</h2>
 
-            <h1>Game Jam Projects</h1>
-        
-        </header>
+						<p>
+							Weometry Gars is a top down shooter where you, the player, take
+							turns with the enemies firing and dodging shots.
+							<br />
+							<br />
+							<a href="https://ploopjuice.itch.io/weometry-gars" target="_blank"
+								>https://ploopjuice.itch.io/weometry-gars</a
+							>
+						</p>
+					</div>
 
-        <main>
+					<div class="slideshow-container">
+						<div class="slides slideWG">
+							<img
+								src="ProjectsImages/WeometryGarsTitleScreen.jpg"
+								alt="Weometry Gars Title Screen"
+							/>
+						</div>
 
-            <article class="projects-article">
-                
-                <section class="info-section">
+						<div class="slides slideWG">
+							<img src="ProjectsImages/WeometryGarsScreenShot(1).png" />
+						</div>
 
-                    <div class="game-info">
+						<div class="slides slideWG">
+							<img src="ProjectsImages/WeometryGarsScreenShot(2).png" />
+						</div>
 
-                        <h2 class="alt-header">Weometry Gars</h2>
+						<a class="prev" onclick="nextSlide(-1, 1)">&#10094;</a>
+						<a class="next" onclick="nextSlide(1, 1)">&#10095;</a>
+					</div>
 
-                        <p>
-                            Weometry Gars is a top down shooter where you, the player, take turns with the enemies firing and dodging shots.
-                            <br> <br>
-                            <a href="https://ploopjuice.itch.io/weometry-gars" target="_blank">https://ploopjuice.itch.io/weometry-gars</a>
+					<div class="controls-credits">
+						<div class="game-info">
+							<h3 class="alt-header">Controls</h3>
 
-                        </p>
+							<p>Keyboard and Mouse</p>
 
-                    </div>
+							<ul>
+								<li>WASD Keys to move</li>
+								<li>Mouse to aim</li>
+								<li>Left Mouse Click or Space to fire</li>
+							</ul>
 
-                    <div class="slideshow-container">
+							<p>Gamepad</p>
 
-                        <div class="slides slideWG">
-                        
-                            <img src="ProjectsImages/WeometryGarsTitleScreen.jpg" alt="Weometry Gars Title Screen">
-                            
-                        </div>
-    
-                        <div class="slides slideWG">
-                            
-                            <img src="ProjectsImages/WeometryGarsScreenShot(1).png">
-                                                
-                        </div>
-    
-                        <div class="slides slideWG">
-    
-                            <img src="ProjectsImages/WeometryGarsScreenShot(2).png">
-    
-                        </div>
-    
-                        <a class="prev" onclick="nextSlide(-1, 1)">&#10094;</a>
-                        <a class="next" onclick="nextSlide(1, 1)">&#10095;</a>
-    
-                    </div>
+							<ul>
+								<li>Left Stick to Move</li>
+								<li>Right Stick to Aim</li>
+								<li>Right Should Button (R1 on most controllers) to shoot.</li>
+							</ul>
+						</div>
 
-                    <div class="controls-credits">
+						<div class="game-info">
+							<h3 class="alt-header">Credits</h3>
 
-                        <div class="game-info">
+							<ul>
+								<li>Camilo Sanchez</li>
+								<li>Lydia Verboom</li>
+								<li>Daniel Cox</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</article>
 
-                            <h3 class="alt-header">Controls</h3>
-                        
-                            <p>Keyboard and Mouse</p>
-    
-                            <ul>
-                                <li>
-                                    WASD Keys to move
-                                </li>
-                                <li>
-                                    Mouse to aim
-                                </li>
-                                <li>
-                                    Left Mouse Click or Space to fire
-                                </li>
-                            </ul>
-    
-                            <p>Gamepad</p>
-    
-                            <ul>
-                                <li>
-                                    Left Stick to Move
-                                </li>
-                                <li>
-                                    Right Stick to Aim
-                                </li>
-                                <li>
-                                    Right Should Button (R1 on most controllers) to shoot.
-                                </li>
-                            </ul>
-    
-                        </div>
-    
-                        <div class="game-info">
-    
-                            <h3 class="alt-header">Credits</h3>
-                        
-                            <ul>
-                                <li>
-                                    Camilo Sanchez
-                                </li>
-                                <li>
-                                    Lydia Verboom
-                                </li>
-                                <li>
-                                    Daniel Cox
-                                </li>
-                            </ul>
-    
-                        </div>
+			<article class="projects-article">
+				<section class="info-section">
+					<div class="game-info">
+						<h2 class="alt-header">CARRUTO</h2>
 
-                    </div>
+						<p>
+							Grow your own clones to solve 1 of 4 unique puzzles. <br />
+							But be careful, for your clones follow your every move... in
+							reverse! <br />
+							<br />
+							<a
+								href="https://globalgamejam.org/2023/games/carruto-0"
+								target="_blank"
+								>https://globalgamejam.org/2023/games/carruto-0</a
+							>
+						</p>
+					</div>
 
-                </section>
+					<div class="slideshow-container">
+						<div class="slides slideC">
+							<img
+								src="ProjectsImages/CarrutoTitleScreen.png"
+								alt="Carruto Title Screen"
+							/>
+						</div>
 
-            </article>
+						<div class="slides slideC">
+							<img src="ProjectsImages/CarrutoScreenShot(1).png" />
+						</div>
 
-            <article class="projects-article">
-                
-                <section class="info-section">
+						<div class="slides slideC">
+							<img src="ProjectsImages/CarrutoScreenShot(2).png" />
+						</div>
 
-                    <div class="game-info">
+						<div class="slides slideC">
+							<img src="ProjectsImages/CarrutoScreenShot(3).png" />
+						</div>
 
-                        <h2 class="alt-header">CARRUTO</h2>
+						<a class="prev" onclick="nextSlide(-1, 2)">&#10094;</a>
+						<a class="next" onclick="nextSlide(1, 2)">&#10095;</a>
+					</div>
 
-                        <p>
-                            Grow your own clones to solve 1 of 4 unique puzzles. <br>
-                            But be careful, for your clones follow your every move... in reverse! <br>
-                            <br>
-                            <a href="https://globalgamejam.org/2023/games/carruto-0" target="_blank">https://globalgamejam.org/2023/games/carruto-0</a>
-                        </p>
+					<div class="controls-credits">
+						<div class="game-info">
+							<h3 class="alt-header">Controls</h3>
 
-                    </div>
+							<ul>
+								<li>Q: Plants a clone (when on the soil)</li>
+								<li>WASD/Arrow keys - Move Carrotu</li>
+							</ul>
+						</div>
 
-                    <div class="slideshow-container">
+						<div class="game-info">
+							<h3 class="alt-header">Credits</h3>
 
-                        <div class="slides slideC">
-                        
-                            <img src="ProjectsImages/CarrutoTitleScreen.png" alt="Carruto Title Screen">
-                            
-                        </div>
+							<ul>
+								<li>Arja Badhri Nadh</li>
+								<li>Camilo Sanchez</li>
+								<li>Lydia Verboom</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</article>
+		</main>
 
-                        <div class="slides slideC">
-                            
-                            <img src="ProjectsImages/CarrutoScreenShot(1).png">
-                                                
-                        </div>
+		<footer>
+			<h3>Contact Me</h3>
 
-                        <div class="slides slideC">
+			<section class="footer-section">
+				<div class="footer-item">
+					<img src="FooterImages/GmailIcon.png" alt="Gmail icon" />
+					<a href="mailto:camilosanpor@gmail.com">camilosanpor@gmail.com</a>
+				</div>
 
-                            <img src="ProjectsImages/CarrutoScreenShot(2).png">
+				<div class="footer-item">
+					<img src="FooterImages/OutlookIcon.png" alt="Outlook icon" />
+					<a href="mailto:camilo.sanchez@dal.ca">camilo.sanchez@dal.ca</a>
+				</div>
 
-                        </div>
-
-                        <div class="slides slideC">
-
-                            <img src="ProjectsImages/CarrutoScreenShot(3).png">
-
-                        </div>
-
-                        <a class="prev" onclick="nextSlide(-1, 2)">&#10094;</a>
-                        <a class="next" onclick="nextSlide(1, 2)">&#10095;</a>
-
-                    </div>
-
-                    <div class="controls-credits">
-
-                        <div class="game-info">
-
-                            <h3 class="alt-header">Controls</h3>
-                        
-                            <ul>
-                                <li>
-                                    Q: Plants a clone (when on the soil)
-                                </li>
-                                <li>
-                                    WASD/Arrow keys - Move Carrotu
-                                </li>
-                            </ul>
-    
-                        </div>
-    
-                        <div class="game-info">
-    
-                            <h3 class="alt-header">Credits</h3>
-                        
-                            <ul>
-                                <li>
-                                    Arja Badhri Nadh
-                                </li>
-                                <li>
-                                    Camilo Sanchez
-                                </li>
-                                <li>
-                                    Lydia Verboom
-                                </li>
-                            </ul>
-    
-                        </div>
-
-                    </div>
-
-                </section>
-
-            </article>
-
-        </main>
-
-        <footer>
-            
-            <h3>Contact Me</h3>
-            
-            <section class="footer-section">
-
-                <div class="footer-item">
-
-                    <img src="FooterImages/GmailIcon.png" alt="Gmail icon">
-                    <a href="mailto:camilosanpor@gmail.com">camilosanpor@gmail.com</a>
-    
-                </div>
-
-                <div class="footer-item">
-
-                    <img src="FooterImages/OutlookIcon.png" alt="Outlook icon">
-                    <a href="mailto:camilo.sanchez@dal.ca">camilo.sanchez@dal.ca</a>
-    
-                </div>
-    
-                <div class="footer-item">
-    
-                    <img src="FooterImages/LinkedInIcon.png" alt="LinkedIn icon">
-                    <a href="https://www.linkedin.com/in/camilo-sanchez-porras-790b2a256/" target="_blank">LinkedIn</a>
-    
-                </div>
-
-            </section>
-
-    
-        </footer>
-
-    </body>
-
+				<div class="footer-item">
+					<img src="FooterImages/LinkedInIcon.png" alt="LinkedIn icon" />
+					<a
+						href="https://www.linkedin.com/in/camilo-sanchez-porras-790b2a256/"
+						target="_blank"
+						>LinkedIn</a
+					>
+				</div>
+			</section>
+		</footer>
+	</body>
 </html>

@@ -1,100 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-        
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-        <link rel="icon" href="FavIcon/VeryBeautifulKitty.png">
-        <title>Camilo Sanchez</title>
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js"></script>
+		<link rel="icon" href="FavIcon/VeryBeautifulKitty.png" />
+		<title>Camilo Sanchez</title>
+	</head>
 
-    <body>
+	<body>
+		<nav>
 
-        <nav>
+			<div class="nav-menu">
+				<a href="index.html" class="nav-item">Home</a>
+				<a href="projects.html" class="nav-item">Game Jams</a>
+				<a href="resume.html" class="nav-item">Resume</a>
+			</div>
 
-            <div class="nav-menu">
-                <a href="index.html" class="nav-item">Home</a>
-                <a href="projects.html" class="nav-item">Game Jams</a>
-                <a href="resume.html" class="nav-item">Resume</a>
-            </div>
+			<div class="hamburger" onclick="burger()">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
 
-            <div class="hamburger" onclick="burger()">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
+			<img
+				src="NavImages/ColorToggle.png"
+				alt="color toggle"
+				class="color-toggle"
+				onclick="changeColors()"
+			/>
 
-            <img src="NavImages/ColorToggle.png" alt="color toggle" class="color-toggle" onclick="changeColors()">
-    
-        </nav>
-        
-        <header class="hero-image">
-    
-            <div class="hero-container">
-                <h1 class="hero-text">Camilo Sanchez</h1>
-                <h1 class="hero-text">Developer</h1>
-            </div>
-            
-        </header>
-    
-        <main class="index-main">
-            
-            <h2 class="alt-header">About Me</h2>
-        
-            <p>
+            <a href="RandomPokeAPI/randomPokemon.html">
+				<img src="IndexImages/pokeball.png" alt="pokeball icon" height="30px" />
+			</a>
 
-                Hello, my name is Camilo Sanchez. I'm Colombian and I study Applied Computer Science at Dalhousie University. <br> <br>
-                
-                I'm a quick learner. I excel at picking up new skills and I really enjoy the learning process.
-                I enjoy working in teams. I follow instructions thoroughly and if the team is in need of direction, I'm able to take a leadership role. 
-                
-                Ever since I was a kid I've been interested in video games and design. 
-                I dream of becoming a game developer and I believe that an important step in achieving my goals is studying computer science. 
-                
-                I'm a firm believer of video games as an art form. 
-                It is clear to me that video games have the power to express complex ideas that can help us better understand ourselves and the world around us. 
-                
-                I would love to help expand the video game industry in my home country. 
-                I want the people of Colombia to recognize the value of video games as an artistic medium.
-            
-            </p>
-        
-        </main>
-    
-        <footer>
-            
-            <h3>Contact Me</h3>
-            
-            <section class="footer-section">
+		</nav>
 
-                <div class="footer-item">
+		<header class="hero-image">
+			<div class="hero-container">
+				<h1 class="hero-text">Camilo Sanchez</h1>
+				<h1 class="hero-text">Developer</h1>
+			</div>
+		</header>
 
-                    <img src="FooterImages/GmailIcon.png" alt="Gmail icon">
-                    <a href="mailto:camilosanpor@gmail.com">camilosanpor@gmail.com</a>
-    
-                </div>
+		<main class="index-main">
+			<h2 class="alt-header">About Me</h2>
 
-                <div class="footer-item">
+			<p>
+				Hello, my name is Camilo Sanchez. I'm Colombian and I study Applied
+				Computer Science at Dalhousie University. <br />
+				<br />
 
-                    <img src="FooterImages/OutlookIcon.png" alt="Outlook icon">
-                    <a href="mailto:camilo.sanchez@dal.ca">camilo.sanchez@dal.ca</a>
-    
-                </div>
-    
-                <div class="footer-item">
-    
-                    <img src="FooterImages/LinkedInIcon.png" alt="LinkedIn icon">
-                    <a href="https://www.linkedin.com/in/camilo-sanchez-porras-790b2a256/" target="_blank">LinkedIn</a>
-    
-                </div>
+				I'm a quick learner. I excel at picking up new skills and I really enjoy
+				the learning process. I enjoy working in teams. I follow instructions
+				thoroughly and if the team is in need of direction, I'm able to take a
+				leadership role. Ever since I was a kid I've been interested in video
+				games and design. I dream of becoming a game developer and I believe
+				that an important step in achieving my goals is studying computer
+				science. I'm a firm believer of video games as an art form. It is clear
+				to me that video games have the power to express complex ideas that can
+				help us better understand ourselves and the world around us. I would
+				love to help expand the video game industry in my home country. I want
+				the people of Colombia to recognize the value of video games as an
+				artistic medium.
+			</p>
+		</main>
 
-            </section>
+		<footer>
+			<h3>Contact Me</h3>
 
-    
-        </footer>
+			<section class="footer-section">
+				<div class="footer-item">
+					<img src="FooterImages/GmailIcon.png" alt="Gmail icon" />
+					<a href="mailto:camilosanpor@gmail.com">camilosanpor@gmail.com</a>
+				</div>
 
-    </body>
+				<div class="footer-item">
+					<img src="FooterImages/OutlookIcon.png" alt="Outlook icon" />
+					<a href="mailto:camilo.sanchez@dal.ca">camilo.sanchez@dal.ca</a>
+				</div>
 
+				<div class="footer-item">
+					<img src="FooterImages/LinkedInIcon.png" alt="LinkedIn icon" />
+					<a
+						href="https://www.linkedin.com/in/camilo-sanchez-porras-790b2a256/"
+						target="_blank"
+						>LinkedIn</a
+					>
+				</div>
+			</section>
+		</footer>
+	</body>
 </html>
